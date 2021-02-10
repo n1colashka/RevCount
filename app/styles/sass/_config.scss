@@ -1,0 +1,410 @@
+
+// USER VARIABLES SECTION
+$accent: #0D37BC;
+$accent-bg: rgba(#0D37BC, .10);
+$pink: #FF1CA2;
+$black: #0E0E0E;
+$fontsize: 16px; // Body Font Size
+$userfont: 'Jost', sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+$gilroy: 'Gilroy-Regular', sans-serif;
+$gilroy-medium: 'Gilroy-Medium', sans-serif;
+$gilroy-semibold: 'Gilroy-Semibold', sans-serif;
+$gilroy-bold: 'Gilroy-Bold', sans-serif;
+$helvetica: 'HelveticaNeueCyr-Roman', sans-serif;
+$helvetica-medium: 'HelveticaNeueCyr-Medium', sans-serif;
+$inter: 'Inter-Regular', sans-serif;
+$inter-italic: 'Inter-Italic', sans-serif;
+$inter-medium: 'Inter-Medium', sans-serif;
+$inter-medium-italic: 'Inter-MediumItalic', sans-serif;
+$oxygen: 'Oxygen-Regular', sans-serif;
+$oxygen-bold: 'Oxygen-Bold', sans-serif;
+$sfpro: 'SFProText-Regular', sans-serif;
+$sourcesans: 'SourceSansPro-Semibold', sans-serif;
+
+// FONTS
+
+@font-face {
+    font-family: 'SFProText-Regular';
+    src: 
+        url('../fonts/SFProText-Regular.woff2') format('woff2'),
+        url('../fonts/SFProText-Regular.woff') format('woff'),
+        url('../fonts/SFProText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Semibold';
+    src: 
+        url('../fonts/SourceSansPro-Semibold.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Semibold.woff') format('woff'),
+        url('../fonts/SourceSansPro-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oxygen-Regular';
+    src: 
+        url('../fonts/Oxygen-Regular.woff2') format('woff2'),
+        url('../fonts/Oxygen-Regular.woff') format('woff'),
+        url('../fonts/Oxygen-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oxygen-Bold';
+    src: 
+        url('../fonts/Oxygen-Bold.woff2') format('woff2'),
+        url('../fonts/Oxygen-Bold.woff') format('woff'),
+        url('../fonts/Oxygen-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: 
+        url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff'),
+        url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Italic';
+    src: 
+        url('../fonts/Inter-Italic.woff2') format('woff2'),
+        url('../fonts/Inter-Italic.woff') format('woff'),
+        url('../fonts/Inter-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: 
+        url('../fonts/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter-Medium.woff') format('woff'),
+        url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-MediumItalic';
+    src: 
+        url('../fonts/Inter-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Inter-MediumItalic.woff') format('woff'),
+        url('../fonts/Inter-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr-Roman';
+    src: 
+        url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr-Medium';
+    src: 
+        url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: 
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: 
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src:
+        url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Semibold.woff') format('woff'),
+        url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: 
+        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+// GENERAL DOCUMENT STYLES
+
+input, textarea {
+	outline: transparent;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+html, body { 
+	height:100%;
+	overflow-x: hidden;
+	font-size: 20px;
+	line-height: 23px;
+	font-family: $gilroy;
+	font-weight: 400;
+}
+
+body {
+	position: relative;
+	font-family: $userfont;
+	color: #fff;
+	min-width: 320px;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+ol li, ul li {
+	list-style: none;
+}
+	
+
+// Input number fix
+
+input[type='number'] {
+	-moz-appearance:textfield;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none
+}
+
+textarea {
+	resize: none;
+}
+
+.container {
+	max-width: 1620px;
+	width: 100%;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 64px;
+	line-height: 72px;
+}
+
+h2 {
+	font-size: 56px;
+	line-height: 72px;
+}
+
+h1, h2 {
+	font-family: $gilroy-bold;
+	font-weight: 700;
+
+	span {
+		font-family: $oxygen-bold;
+		color: $accent;
+		text-decoration: underline;
+	}
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	cursor: pointer;
+	transition: .2s ease;
+	padding: 15px 38px;
+	font-weight: 600;
+	border-radius: 4px;
+	border: 1px solid $accent;
+	color: $accent;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: transparent;
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.overflow-hidden {
+	overflow: hidden;
+
+	body {
+		overflow: hidden
+	} 
+}
+
+.tags {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 500;
+	padding: 25px 0;
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: -20px;
+		margin-left: -1.3125rem;
+		margin-right: -1.3125rem;
+
+	}
+
+	li.active {
+		color: $accent;
+		border-color: $accent;
+	}
+
+	li {
+		border: 2px solid #fff;
+		border-radius: 17px;
+		transition: .2s ease;
+		margin-bottom: 20px;
+		margin-left: 1.3125rem;
+		margin-right: 1.3125rem;
+	}
+
+	a {
+		display: block;
+		padding: 7px 15px;
+	}
+}
+
+.pagination {
+	font-size: 16px;
+	line-height: 18px;
+	padding-top: 25px;
+	padding-bottom: 40px;
+
+	ul {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	
+	li + li {
+		margin-left: 0.9375rem;
+	}
+
+	li.active {
+		font-weight: 700;
+		color: $accent;
+	}
+
+	.pagination__next {
+		margin-left: 1.875rem;
+
+		a {
+			display: flex;
+			align-items: center;
+		}
+
+		img {
+			transform: rotate(180deg);
+		}
+	}
+
+	.pagination__prev {
+		margin-right: 0.9375rem;
+
+		a {
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+.pagination--bottom {
+	ul {
+		justify-content: flex-end;
+	}
+}
+
+
+
+.showcase-page {
+    .games__list {
+        margin-bottom: -35px;
+	}
+	
+	.text {
+		padding-bottom: 8.75rem;
+	}
+
+    .text__inner {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: -6.25rem;
+
+		.text__box {
+			width: 45%;
+		}
+	}
+
+	.text p + p {
+		margin-top: 1.5625rem;
+	}
+}
