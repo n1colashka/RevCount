@@ -53,9 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
         
-        }
-
-        
+    }
 
 
     // initArticlesSlider();

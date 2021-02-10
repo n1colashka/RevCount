@@ -1,0 +1,118 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+
+    &__banner {
+        background-color: $darkblue;
+        font-size: 15px;
+        line-height: 20px;
+        font-family: $inter-medium;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        padding: 8px;
+
+        span {
+            text-transform: uppercase;
+            color: $pink;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__socials {
+        margin-left: 50px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        margin-left: 30px;
+    }
+
+    &__menu-btn {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        background-color: rgba($darkblue, .10);
+        border-radius: 4px;
+        border: none;
+        outline-color: rgba($accent, .10);
+        padding: 6px;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $darkblue;
+            margin-bottom: 4px;
+
+            &:last-child {
+                margin-bottom: 0;
+                width: 50%;
+                align-self: flex-start;
+            }
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+
+    svg, path {
+        transition: .2s ease;
+    }
+
+    li + li {
+        margin-left: 30px;
+    }
+}
+
+.logo {
+    display: block;
+    img {
+        width: 146px;
+    }
+}
+.navigation {
+    font-family: $gilroy-semibold;
+    font-weight: 600;
+    font-size: 18px;
+    color: $darkblue;
+    padding-right: 30px;
+    border-right: 1px solid rgba($darkblue, .2);
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    li + li {
+        margin-left: 23px;
+    }
+}

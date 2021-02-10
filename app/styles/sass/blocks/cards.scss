@@ -1,0 +1,388 @@
+.card {
+    position: relative;
+    display: inline-block;
+    font-family: $inter;
+    font-size: 15px;
+    line-height: 18px;
+
+    &__content {
+        background-color: rgba(#0D37BC, .1);
+        border-radius: 10px;
+        padding: 18px 15px;
+        padding-bottom: 10px;
+        width: 240px;
+    }
+
+    &__modal {
+        width: 220px;
+        position: absolute;
+        right: -120px;
+        top: -90px;
+        z-index: 6;
+        border-radius: 10px;
+        padding: 18px 15px;
+        padding-bottom: 10px;
+        background-color: #fff;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.16);
+    }
+
+    p {
+        margin: 6px 0;
+    }
+
+    ol {
+        padding-left: 18px;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    li {
+        margin-bottom: 3px;
+    }
+
+    &__foot {
+        position: relative;
+        padding-top: 12px;
+        border-top: 1px solid rgba(#111742, .1);
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        padding: 7px 20px;
+        font-family: $inter-medium;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        color: $pink;
+        border: 2px solid $pink;
+        border-radius: 8px;
+        margin-bottom: 5px;
+    }
+
+    &__btn--fill {
+        color: #fff;
+        background-color: $pink;
+    }
+
+    &__caption {
+        display: block;
+        font-family: $inter-medium;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: rgba(#0E0E0E, .3);
+    }
+
+    &__mouse {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        z-index: 7;
+    }
+
+    &__tip {
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.16);
+        font-size: 14px;
+        right: -70px;
+        position: absolute;
+        bottom: -20px;
+        padding: 8px 13px;
+        border-radius: 0 10px 10px 10px;
+        background-color: #fff;
+        z-index: 5;
+
+        i {
+            color: $pink;
+            font-style: italic;
+            font-family: $inter-italic;
+        }
+    }
+
+    &__btn-wrapper {
+        position: relative;
+    }
+
+    &__inputs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: -20px;
+    }
+
+    &__input {
+        font-size: 14px;
+        line-height: 18px;
+        border: 1px solid rgba(#111742, .1);
+        color: rgba($black, .3);
+        padding: 6px 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        width: 48%;
+
+        span {
+            color: rgba($black, 1);
+        }
+    }
+
+    &__title {
+        font-family: $inter-medium;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__logo {
+        margin-top: 15px;
+    }
+
+    &__count {
+        text-align: right;
+        span {
+            display: block;
+            font-size: 10px;
+            color: rgba($black, .5);
+            line-height: 1.1;
+        }
+
+        b {
+            display: block;
+            font-family: $inter-medium;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: $pink;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        img {
+            flex-shrink: 0;
+        }
+    }
+
+    &__logo-text {
+        margin-left: 10px;
+        span {
+            display: block;
+            font-size: 10px;
+            color: rgba($black, .5);
+            line-height: 1.1;
+        }
+
+        b {
+            display: block;
+            font-family: $inter-medium;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.1;
+        }
+    }
+
+    &__link {
+        margin-bottom: 14px;
+        color: $pink;
+        font-size: 18px;
+        line-height: 24px;
+        font-family: $inter-medium;
+        font-weight: 500;
+    }
+    
+    &__form {
+        max-width: 250px;
+
+        li {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: -20px;
+                width: calc(100% + 20px);
+                background-color: rgba(#111742, .1);
+                height: 1px;
+            }
+
+            & > span {
+                display: block;
+                margin-bottom: 10px;
+            }
+            
+            &:last-child {
+                margin-bottom: 0;
+                &::after {
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__small-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid rgba(#111742, .1);
+        
+
+        p {
+            font-size: 15px;
+            line-height: 18px;
+            color: $pink;
+            font-family: $inter-medium;
+            font-weight: 500;
+        }
+
+        b {
+            display: block;
+        }
+
+        span {
+            display: block;
+            opacity: 0.5;
+            font-size: 10px;
+            font-family: $inter;
+            font-weight: 400;
+        }
+    }
+
+    &--2 {
+        .card__mouse {
+            bottom: 57px;
+        }
+    
+        .card__tip {
+            bottom: 40px;
+        }
+    }
+
+    &--3 {
+        padding: 23px 20px;
+        padding-bottom: 14px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.16);
+        background-color: #fff;
+        border-radius: 20px;
+
+        .card__content {
+            padding: 15px;
+        }
+    }
+
+    &--4 {
+        padding: 23px 20px;
+        padding-bottom: 14px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.16);
+        background-color: #fff;
+        border-radius: 20px;
+
+        .card__content {
+            padding: 15px;
+        }
+    }
+
+    &--5 {
+        width: 240px;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: rgba($pink, .1);
+    }
+
+    &--6 {
+        .card__btn {
+            width: 210px;
+        }
+        .card__mouse {
+            right: 90px;
+            bottom: -20px;
+        }
+        .card__tip {
+            bottom: -37px;
+            right: -100px;
+        }
+    }
+
+    &--7 {
+        width: 280px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.16);
+        border-radius: 120px 20px 20px 20px;
+        padding: 20px;
+        background-color: #fff;
+        .card__content {
+            padding: 15px;
+            margin: 0 auto;
+        }
+
+        .card__tip {
+            bottom: -43px;
+            right: -66px;
+        }
+
+        .card__mouse {
+            bottom: -23px;
+        }
+    }
+
+    &--8 {
+        width: 280px;
+        border-radius: 120px 20px 20px 20px;
+        padding: 20px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.16);
+        background-color: #fff;
+        .card__content {
+            padding: 15px;
+            margin: 0 auto;
+        }
+        .card__head {
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+        .card__text {
+            padding-bottom: 12px;
+        }
+    }
+
+    &__text-content {
+        font-weight: 500;
+        font-family: $inter-medium;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        b {
+            display: block;
+            font-weight: 500;
+            font-family: $inter-medium;
+        }
+
+        span {
+            display: block;
+            font-size: 13px;
+            opacity: .5;
+        }
+    }
+
+    &__img {
+        margin-left: -30px;
+        margin-top: -40px;
+        margin-right: 10px;
+        flex-shrink: 0;
+        img {
+            border-radius: 50%;
+        }
+    }
+}

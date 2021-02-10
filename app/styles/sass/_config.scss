@@ -3,9 +3,9 @@
 $accent: #0D37BC;
 $accent-bg: rgba(#0D37BC, .10);
 $pink: #FF1CA2;
-$black: #0E0E0E;
+$darkblue: #111742;
+$black: rgba(#0E0E0E, .8);
 $fontsize: 16px; // Body Font Size
-$userfont: 'Jost', sans-serif; // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 
 $gilroy: 'Gilroy-Regular', sans-serif;
@@ -21,7 +21,8 @@ $inter-medium-italic: 'Inter-MediumItalic', sans-serif;
 $oxygen: 'Oxygen-Regular', sans-serif;
 $oxygen-bold: 'Oxygen-Bold', sans-serif;
 $sfpro: 'SFProText-Regular', sans-serif;
-$sourcesans: 'SourceSansPro-Semibold', sans-serif;
+$sourcesans-semibold: 'SourceSansPro-Semibold', sans-serif;
+$sourcesans: 'SourceSansPro-Regular', sans-serif;
 
 // FONTS
 
@@ -43,6 +44,17 @@ $sourcesans: 'SourceSansPro-Semibold', sans-serif;
         url('../fonts/SourceSansPro-Semibold.woff') format('woff'),
         url('../fonts/SourceSansPro-Semibold.ttf') format('truetype');
     font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: 
+        url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+        url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -200,8 +212,7 @@ html, body {
 
 body {
 	position: relative;
-	font-family: $userfont;
-	color: #fff;
+	color: $black;
 	min-width: 320px;
 }
 
@@ -209,12 +220,12 @@ body {
 	box-sizing: inherit;
 }
 
-ul, li {
+ul,  li {
 	padding: 0;
 	margin: 0;
 }
 
-ol li, ul li {
+ul li {
 	list-style: none;
 }
 	
@@ -229,6 +240,11 @@ input[type='number'] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none
+}
+
+button {
+	outline: transparent;
+	cursor: pointer;
 }
 
 textarea {
@@ -257,23 +273,37 @@ h1, h2 {
 	font-weight: 700;
 
 	span {
+		display: inline-block;
+		padding-bottom: 5px;
+		position: relative;
 		font-family: $oxygen-bold;
 		color: $accent;
-		text-decoration: underline;
+		&::after {
+			position: absolute;
+			content: "";
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			width: 95%;
+			height: 5px;
+			background: $accent;
+		}
 	}
 }
 
 .btn {
 	display: inline-block;
+	font-size: 18px;
+	font-family: $gilroy-semibold;
+	font-weight: 600;
 	border: none;
 	cursor: pointer;
 	transition: .2s ease;
 	padding: 15px 38px;
-	font-weight: 600;
 	border-radius: 4px;
 	border: 1px solid $accent;
 	color: $accent;
-	text-transform: uppercase;
 	text-align: center;
 	background-color: transparent;
 }
