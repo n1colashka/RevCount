@@ -187,6 +187,36 @@
             left: 340px;
         }
     }
+    .love {
+        .card {
+            width: 206px;
+            padding: 15px;
+            * {
+                font-size: 10px;
+                line-height:  12px;
+            }
+            &__title,
+            &__link {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            &__content {
+                padding: 10px;
+                width: auto;
+            }
+        }
+    }
+    .love-card--1 {
+        right: 320px;
+    }
+    .love-card--2 {
+        right: 115px;
+        top: 0;
+    }
+    .love-card--3 {
+        bottom: 0;
+        right: 50px;
+    }
 }
 
 @media (max-width: 1450px) {
@@ -213,6 +243,38 @@
 }
 
 @media (max-width: 1400px) {
+    .love .hero__form {
+        width: 100%;
+    }
+    .boxes {
+        .card--2 .card__caption {
+            font-size: 10px;
+        }
+        &__content {
+            max-width: 545px;
+        }
+        &__item--3 {
+            .boxes__content {
+                max-width: 570px;
+            }
+        }
+        .card--3 {
+            left: 305px;
+        }
+        .card {
+            width: 220px;
+            * {
+                font-size: 11px;
+            }
+            &__title {
+                font-size: 13px;
+            }
+            &__link {
+                font-size: 13px;
+            }
+        }
+    }
+    
     .benefits {
         &__inner {
             padding-bottom: 130px;
@@ -470,6 +532,115 @@
 }
 
 @media (max-width: 1200px) {
+    .love {
+        padding-top: 93px;
+        padding-bottom: 104px;
+        &__inner {
+            max-width: 540px;
+        }
+    }
+    .love-card--1 {
+        right: 281px;
+        top: 108px;
+    }
+    .love-card--2 {
+        right: 65px;
+        top: 0;
+    }
+    .love-card--3 {
+        bottom: -10px;
+        right: -16px;
+    }
+    .boxes {
+        padding-bottom: 100px;
+        &__content {
+            max-width: 420px;
+        }
+        &__title {
+            word-break: break-all;
+        }
+        .card * {
+            font-size: 8px;
+            line-height: 11px;
+        }
+        .card--2 {
+            width: 160px;
+            padding: 0;
+            left: -30px;
+        }
+        .card--3 {
+            left: 155px;
+            width: 180px;
+        }
+        .card__title,
+        .card__link {
+            font-size: 10px;
+            line-height: 13px;
+        }
+        .card__content {
+            padding: 8px;
+        }
+        .card--2 .card__caption {
+            font-size: 7px;
+            line-height: 12px;
+        }
+        &__history {
+            padding: 20px;
+        }
+        &__history-caption {
+            font-size: 8px;
+            line-height: 11px;
+        }
+        &__history-title {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &__history-item {
+            padding-bottom: 15px;
+            &::before {
+                background: url('../images/dist/history-line-2.svg') center no-repeat;
+            }
+        }
+        &__item {
+            margin-bottom: 70px;
+        }
+        &__item--2 {
+            margin-bottom: 100px;
+        }
+        &__title {
+            font-size: 46px;
+            line-height: 56px;
+            margin-bottom: 15px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        &__stats {
+            padding: 14px 20px;
+        }
+        &__stats-title {
+            font-size: 47px;
+            line-height: 63px;
+
+            sup {
+                font-size: 13px;
+                line-height: 17px;
+                top: -35px;
+            }
+        }
+        &__stats-count {
+            font-size: 17px;
+            line-height: 22px;
+        }
+        &__stats-foot {
+            li {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
     .benefits {
         padding-top: 90px;
         &__title {
@@ -651,6 +822,38 @@
 }
 
 @media (max-width: 1000px) {
+    .boxes {
+        padding-top: 80px;
+        &__item--2 {
+            .boxes__content {
+                margin-left: 0;
+            }
+            padding-top: 350px;
+        }
+        &__item--1 {
+            margin-bottom: 30px;
+        }
+        .card--2 {
+            left: 20%;
+        }
+        .card--3 {
+            left: 60%;
+        }
+        &__item {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+        &__stats {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+        &__history {
+            margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     .work__item--1 .work__line, .work__item--2 .work__line, .work__item--3 .work__line {
         right: -221px;
         width: 215px;
@@ -693,6 +896,27 @@
 }
 
 @media (max-width: 900px) {
+    .love {
+        padding-bottom: 70px;
+        padding-top: 260px;
+        .hero__form form {
+            justify-content: flex-start;
+        }
+    }
+    .love-card--1 {
+        left: 67px;
+        right: auto;
+        top: -20px;
+    }
+    .love-card--2 {
+        right: 285px;
+        top: 10px;
+    }
+    .love-card--3 {
+        right: 65px;
+        bottom: auto;
+        top: -30px;
+    }
     .benefits {
         .container {
             padding: 0 20px;
@@ -757,6 +981,26 @@
 
 
 @media (max-width: 700px) {
+    .love-card--1 {
+        left: -50px;
+        top: 50px;
+    }
+    .love-card--2 {
+        right: auto;
+        left: 118px;
+        top: 93px;
+    }
+    .love-card--3 {
+        right: -79px;
+        top: 56px;
+    }
+    .love {
+        .card {
+            width: 180px;
+        }
+        padding-top: 380px;
+        padding-bottom: 50px;
+    }
     .benefits {
         padding-top: 70px;
         &__title {
@@ -967,6 +1211,36 @@
 }
 
 @media (max-width: 640px) {
+    .btn {
+        font-size: 16px;
+    }
+    .boxes {
+        padding-top: 60px;
+        padding-bottom: 80px;
+
+        &__item {
+            margin-bottom: 50px;
+        }
+        &__btn {
+            width: 100%;
+        }
+        &__stats-count {
+            font-size: 14px;
+            line-height: 19px;
+        }
+        &__stats-title {
+            font-size: 43px;
+            line-height: 53px;
+            sup {
+                font-size: 11px;
+                line-height: 15px;
+            }
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
     .work {
         padding-bottom: 20px;
 
@@ -1014,6 +1288,18 @@
         }
         &__line {
             display: none;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .boxes {
+        .card--2 {
+            left: 0;
+        }
+        .card--3 {
+            left: auto;
+            right: 0;
         }
     }
 }

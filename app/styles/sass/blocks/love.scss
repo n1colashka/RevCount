@@ -1,0 +1,45 @@
+.love {
+    position: relative;
+    padding-top: 137px;
+    padding-bottom: 160px;
+    margin: 20px 0;
+    background-color: rgba($accent, .05);
+    &__inner {
+        max-width: 640px;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 60px;
+        color: $accent;
+    }
+    .hero__form {
+        position: relative;
+        z-index: 2;
+        input {
+            width: 69%;
+        }
+    }
+}
+
+.love-card--1 {
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid rgba($accent, .05);
+    box-shadow: none;
+    top: 150px;
+    right: 512px;
+    transform: rotate(6deg);
+}
+.love-card--2 {
+    position: absolute;
+    transform: rotate(-6deg);
+    right: 235px;
+    top: -40px;
+}
+.love-card--3 {
+    position: absolute;
+    right: 120px;
+    bottom: -40px;
+    transform: rotate(8deg);
+}
