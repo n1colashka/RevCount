@@ -1,0 +1,40 @@
+.management {
+    position: relative;
+    padding: 170px 0;
+
+    &__inner {
+        max-width: 520px;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        line-height: 24px;
+    }
+
+    .card--7 {
+        position: absolute;
+        right: 600px;
+        top: 125px;
+    }
+
+    .card {
+        transform: none;
+        &__modal {
+            width: 250px;
+            top: auto;
+            bottom: 73px;
+            right: -180px;
+        }
+    }
+
+    .card--3 {
+        position: absolute;
+        right: 110px;
+        bottom: 96px;
+    }
+}

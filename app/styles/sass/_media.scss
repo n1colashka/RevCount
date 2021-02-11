@@ -8,6 +8,148 @@
 }
 
 @media (max-width: 1750px) {
+    .card--7 {
+        border-radius: 70px 12px 20px 20px;
+    }
+    .card {
+        &__text-content {
+            font-size: 9px;
+            line-height: 12px;
+            margin-bottom: 10px;
+        }
+        
+        &__img {
+            margin-left: -17px;
+            margin-top: -20px;
+            img {
+                width: 50px;
+            }
+        }
+
+        &__head {
+            margin-bottom: 0;
+        }
+
+        &__head-info {
+            span {
+                font-size: 8px;
+            }
+        }
+    }
+    .management {
+        .card--3 {
+            right: 40px;
+        }
+        .card--7 {
+            right: 400px;
+            top: 265px;
+        }
+        .card {
+            font-size: 9px;
+            line-height: 1;
+            width: 180px;
+            padding: 15px;
+    
+            li {
+                margin-bottom: 5px;
+            }
+    
+            &__count {
+                span {
+                    font-size: 6px;
+                    line-height: 10px;
+                }
+                b {
+                    font-size: 9px;
+                    line-height: 11px;
+                }
+            }
+            ol {
+                padding-left: 13px;
+                margin-bottom: 7px;
+            }
+            &__content {
+                width: auto;
+                padding: 10px;
+            }
+            &__title {
+                font-size: 10px;
+                line-height: 13px;
+            }
+            &__link {
+                font-size: 10px;
+                line-height: 13px;
+            }
+            &__input {
+                font-size: 9px;
+                line-height: 1;
+            }
+            &__btn {
+                font-size: 9px;
+                border-radius: 4px;
+                line-height: 1;
+                padding: 5px 10px;
+                border-width: 0.5px;
+            }
+            &__mouse  {
+                bottom: -15px;
+                right: 15px;
+                img {
+                    width: 16px;
+                }
+            }
+            &__caption {
+                font-size: 9px;
+                line-height: 1;
+            }
+            &__tip {
+                font-size: 9px;
+                padding: 7px;
+                line-height: 1;
+                right: -37px;
+                bottom: -29px;
+            }
+            &__inputs {
+                margin-left: -12px;
+            }
+            &__modal {
+                width: 186px;
+                height: 170px;
+                font-size: 10px;
+                line-height: 1;
+                bottom: 45px;
+                right: -136px;
+                padding: 10px;
+    
+                ol {
+                    margin-bottom: 0;
+                }
+            }
+            
+            &__form {
+                li {
+                    padding-bottom: 8px;
+                    margin-bottom: 8px;
+                }
+            }
+            &__logo-text {
+                margin-left: 5px;
+                span {
+                    font-size: 6px;
+                }
+                b {
+                    font-size: 10px;
+                }
+            }
+            &__logo {
+                margin-top: 7px;
+                img {
+                    width: 27px;
+                }
+            }
+    
+        }
+    }
     .hero {
         .card--6 {
             left: -10px;
@@ -32,6 +174,7 @@
 }
 
 @media (max-width: 1450px) {
+    
     .video__btn img {
         width: 67px;
     }
@@ -223,6 +366,21 @@
 }
 
 @media (max-width: 1200px) {
+    .management {
+        padding-bottom: 120px;
+        padding-top: 90px;
+        &__inner {
+            max-width: 395px;
+        }
+        .card--7 {
+            right: 375px;
+            top: 180px;
+        }
+        .card--3 {
+            bottom: auto;
+            top: 250px;
+        }
+    }
     h1 {
         font-size: 56px;
         line-height: 64px;
@@ -245,6 +403,14 @@
 }
 
 @media (max-width: 1124px) {
+    
+    body {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 46px;
+        line-height: 56px;
+    }
     .video__btn img {
         width: 48px;
     }
@@ -278,6 +444,20 @@
 }
 
 @media (max-width: 1000px) {
+    .management {
+        padding-top: 420px;
+        padding-bottom: 80px;
+
+        .card--7 {
+            top: 100px;
+            right: 63%;
+        }
+
+        .card--3 {
+            top: 170px;
+            right: 100px;
+        }
+    }
     .card {
         &__tip {
             box-shadow: none;
@@ -326,6 +506,34 @@
 
 
 @media (max-width: 700px) {
+    body {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .management {
+        padding-top: 300px;
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__btn {
+            width: 100%;
+        }
+        .card--7 {
+            transform: scale(0.7);
+            right: auto;
+            left: 0;
+            top: 20px;
+        }
+        .card--3 {
+            transform: scale(0.7);
+            right: 0;
+            top: 90px;
+        }
+    }
     .video {
         margin-top: -130px;
 
