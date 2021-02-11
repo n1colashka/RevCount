@@ -220,6 +220,14 @@
 }
 
 @media (max-width: 1450px) {
+    .footer {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .soon {
+        padding-top: 105px;
+        padding-bottom: 150px;
+    }
     .work {
         padding-top: 65px;
         padding-bottom: 65px;
@@ -470,6 +478,9 @@
 }
 
 @media (max-width: 1330px) {
+    .footer .navigation li+li {
+        margin-left: 33px;
+    }
     .work__item--5 {
         .work__line--1 {
             width: 150px;
@@ -730,6 +741,41 @@
 }
 
 @media (max-width: 1124px) {
+    .soon {
+        padding-top: 70px;
+    }
+    .posts {
+        padding-bottom: 200px;
+        padding-top: 80px;
+        &__name {
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 5px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__items {
+            a {
+                width: 375px;
+                height: 375px;
+            }
+            a + a {
+                margin-left: 20px;
+            }
+        }
+        &__time {
+            font-size: 12px;
+            line-height: 17px;
+        }
+        &__tags {
+            li {
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+    }
     .work__item--5 {
         .work__line--2 {
             right: -135px
@@ -896,6 +942,53 @@
 }
 
 @media (max-width: 900px) {
+    .footer {
+        margin-left: 40px;
+        margin-right: 40px;
+
+        .navigation {
+            padding-right: 0;
+        }
+
+        &__inner {
+            padding: 0;
+            padding-bottom: 22px;
+            border-bottom: 1px solid rgba($black-1, .2);
+        }
+        
+        .container {
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+
+        &__socials {
+            display: none;
+            margin-left: 0;
+            padding-top: 22px;
+            padding-left: 0;
+        }
+
+        &__socials--mob {
+            display: flex;
+            border-left: none;
+        }
+    }
+    .soon {
+        &__title {
+            max-width: 100%;
+        }
+        &__inner {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .hero__form {
+            max-width: 100%;
+        }
+    }
+    .posts {
+        padding-top: 70px;
+        padding-bottom: 150px;
+    }
     .love {
         padding-bottom: 70px;
         padding-top: 260px;
@@ -1211,6 +1304,66 @@
 }
 
 @media (max-width: 640px) {
+    .footer {
+        margin-left: 10px;
+        margin-right: 10px;
+        &__logo {
+            display: none;
+        }
+        .navigation {
+            font-size: 16px;
+            line-height: 21px;
+            width: 100%;
+
+            li:last-child {
+                margin-left: auto;
+            }
+        }
+        &__inner {
+            justify-content: flex-start;
+        }
+        .container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .soon {
+        padding-top: 63px;
+        padding-bottom: 80px;
+    }
+    .posts {
+        &__items {
+            a {
+                width: 300px;
+                height: 320px;
+                padding: 15px;
+            }
+            a + a {
+                margin-left: 8px;
+            }
+        }
+        &__name {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__head {
+            margin-bottom: 30px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__btn {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+        }
+    }
     .btn {
         font-size: 16px;
     }
@@ -1229,9 +1382,10 @@
             line-height: 19px;
         }
         &__stats-title {
-            font-size: 43px;
-            line-height: 53px;
+            font-size: 30px;
+            line-height: 38px;
             sup {
+                top: -20px;
                 font-size: 11px;
                 line-height: 15px;
             }

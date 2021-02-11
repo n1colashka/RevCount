@@ -1,0 +1,38 @@
+.soon {
+    padding-bottom: 180px;
+    padding-top: 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 435px;
+        color: $pink;
+
+        span {
+            color: $pink;
+            &::after {
+                background-color: $pink;
+                width: 100%;
+            }
+        }
+        
+    }
+
+    .hero {
+
+        &__form {
+            max-width: 660px;
+            width: 100%;
+        }
+    
+        &__btn {
+            background-color: $pink;
+        }
+    }
+    
+}
+
