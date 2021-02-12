@@ -439,3 +439,69 @@ a {
 		margin-top: 1.5625rem;
 	}
 }
+
+.join {
+	&__banner {
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 8;
+        background-color: $darkblue;
+        border-radius: 15px 0px 0px 0px;
+        input {
+            max-width: 180px;
+            display: block;
+            padding-right: 20px;
+            font-size: 18px;
+            font-family: $sourcesans;
+            color: #fff;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid rgba(#FFFFFF, .5);
+            margin-left: 33px;
+            margin-right: 20px;
+            &::placeholder {
+                color: rgba(#fff, .5);
+            }
+        }
+    }
+
+    &__banner-title {
+        color: #fff;
+        font-size: 18px;
+        line-height: 25px;
+        font-family: $sourcesans;
+        font-weight: 600;
+    }
+
+    &__plus {
+        cursor: pointer;
+        position: relative;
+        width: 15px;
+        height: 15px;
+        margin-top: 3px;
+		border: none;
+		background-color: transparent;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 15px;
+            height: 2px;
+            background-color: #fff;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            width: 2px;
+            height: 15px;
+            left: 7px;
+        }
+    }
+}
