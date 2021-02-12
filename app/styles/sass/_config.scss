@@ -40,6 +40,7 @@ $sourcesans: 'SourceSansPro-Regular', sans-serif;
 
 @font-face {
     font-family: 'SourceSansPro-Semibold';
+	src: local("SourceSansPro Semibold"), local("SourceSansPro-Semibold");
     src: 
         url('../fonts/SourceSansPro-Semibold.woff2') format('woff2'),
         url('../fonts/SourceSansPro-Semibold.woff') format('woff'),
